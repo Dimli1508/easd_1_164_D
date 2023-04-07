@@ -12,19 +12,19 @@ int dimas[30];
 int n;
 
 void selectionsort() {
-    for (int j = 0; j < n - 1; j++) {
-        int min_index = j;
-        for (int i = j + 1; i < n; i++)
+    for (int DL = 0; DL < n - 1; DL++) {
+        int min_index = DL;
+        for (int i = DL + 1; i < n; i++)
         {
             if (dimas[i] < dimas[min_index])
             {
                 min_index = i;
             }
         }
-        if (min_index != j)
+        if (min_index != DL)
         {
-            int temp = dimas[j];
-            dimas[j] = dimas[min_index];
+            int temp = dimas[DL];
+            dimas[DL] = dimas[min_index];
             dimas[min_index] = temp;
         }
     }
@@ -57,8 +57,8 @@ void input()
 void display() {
     cout << endl;
     cout << "Element Array yang telah tersusun" << endl;
-    for (int j = 0; j < n; j++) { 
-        cout << dimas[j] << endl;
+    for (int DL = 0; DL < n; DL++) { 
+        cout << dimas[DL] << endl;
     }
     cout << endl; 
 }
