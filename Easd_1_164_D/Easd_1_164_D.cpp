@@ -4,3 +4,6 @@
 //4. Bubble sort karna simple dan mudah untuk difahami
 //5. Quadratic : Bubble Sort, Insertion Sort, Selection Sort
 //   LogLinear : Merge Sort, Quick Sort
+
+#include <iostream>
+using namespace std;
